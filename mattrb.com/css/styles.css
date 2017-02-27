@@ -1,0 +1,381 @@
+/*==============================================================================
+==================================== Resets ====================================
+==============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+						   content: '';
+						   content: none;
+					       }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*==============================================================================
+==================================== Styles ====================================
+==============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/*font-family: 'Varela Round', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Hind', sans-serif;
+font-family: 'Lato', sans-serif;*/
+
+.full {
+    width: 100%;
+    height: 100vh;
+}
+
+.half {
+    width: 100%;
+    height: 50vh;
+}
+
+.third {
+    width: 100%;
+    height: 33vh;
+}
+
+.quarter {
+    width: 100%;
+    height: 25vh;
+}
+
+.middle-div {
+    position: relative;
+}
+
+.middle-div p, .middle-div h1, .middle-div h2, .middle-div h3, .middle-div h4, .middle-div h5, .middle-div h6, .middle-div div, .middle-div img {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+body {
+    background-color: #34495E;
+    color: #ECF0F1;
+}
+
+p {
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: .5em;
+}
+
+a {
+    font-size: 1em;
+    color: #ECF0F1;
+    text-decoration: none;
+    font-family: 'Hind', sans-serif;
+}
+
+#splash {
+    font-family: 'Varela Round', sans-serif;
+    /*background: #263238;
+    background: #2D2D37;*/
+}
+
+#projects {
+    padding: 0;
+    margin: 0;
+
+    color: #ECF0F1;
+    background: #EF5350;
+
+    text-align: center;
+}
+
+#projects div div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+
+    justify-content: space-around;
+}
+
+#projects div div div div {
+    padding: 10px;
+    margin: 0;
+    width: 300px;
+    height: 200px;
+
+    display: table-cell;
+    vertical-align: middle;
+
+    /* background: rgba(0, 0, 0, .02) */
+}
+
+#projects div p {
+    font-family: 'Varela Round', sans-serif;
+}
+
+#projects div h4 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+
+    font-size: 1.5em;
+}
+
+#projects div h5 {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 1em;
+}
+
+.social {
+    background: #2ECC71;
+    text-align: center;
+}
+
+.social div a img {
+    padding: 4px;
+}
+
+.social div {
+    padding: 10px;
+    height: 40px;
+}
+
+.social div a {
+    display:inline-block;
+    height: 40px;
+    width:40px;
+    padding: 0;
+}
+
+#social-top {
+    display:none;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+    background-size: contain;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+
+
+
+@media (min-width: 1000px) and (min-height: 750px) {
+    #splash {
+	width: 50%;
+	float: left;
+    }
+    #projects {
+	background: rgba(0,0,0,0);
+	display: table;
+	height: 100vh;
+        width: 50%;
+    }
+    #projects > div {
+	display: table-cell;
+	vertical-align: middle;
+    }
+    .social {
+	position: absolute;
+	bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+	background: rgba(0,0,0,0);
+    }
+    .down-arrow {
+	display: none;
+    }
+    #social-top {
+        display: inherit;
+        top:50px;
+    }
+    #social-bottom {
+        display: none;
+    }
+    #back-top {
+        display: none;
+    }
+}
+
+
+
+/*==============================================================================
+==================================== Bounce ====================================
+==============================================================================*/
+
+.bounce-me {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+/*@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+    }
+}
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+    }
+}*/
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+    }
+    40% {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
+	-o-transform: translateY(-20px);
+	transform: translateY(-20px);
+    }
+    60% {
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	-o-transform: translateY(-10px);
+	transform: translateY(-10px);
+    }
+}
+
+/*==============================================================================
+==================================== Scroll ====================================
+==============================================================================*/
+
+#back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#back-top a {
+    width: 40px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ECF0F1;
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+#back-top a:hover {
+    color: #000;
+}
+
+
+/* arrow icon (span tag) */
+
+#back-top span {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: #ddd url(../img/up-arrow.png) no-repeat center center;
+    background-size: 30px 30px;
+    /* rounded corners */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+/*#back-top a:hover span {
+    background-color: #777;
+}*/
