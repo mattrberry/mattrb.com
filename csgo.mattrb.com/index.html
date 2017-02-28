@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="theme-color" content="#eceff1">
-    <meta name="description" content="Cleanly and efficiently display any CSGO players' public inventory">
-    <meta name="keywords" content="csgo, skins, inspect, trade, counter strike, csgo skin statistics">
-
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/styles.css" media="screen"/>
-
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="#eceff1" name="theme-color" />
+    <meta content="Cleanly and efficiently display any CSGO players&#39; public inventory" name="description" />
+    <meta content="csgo, skins, inspect, trade, counter strike, csgo skin statistics" name="keywords" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="js/post.js" type="text/javascript"></script>
-
-    <link rel="icon" href="img/favicon.ico?v=2"/>
-
+    <link href="img/favicon.ico?v=2" rel="icon" />
     <title>CSGO Skin Stats</title>
   </head>
-
   <body>
     <noscript>
       <div style="height:100vh; width:100%; position:fixed">
@@ -27,19 +22,15 @@
         </p>
       </div>
     </noscript>
-
     <div id="container">
-      <h1 style="cursor:default">CSGO Skin Stats</h1>
+      <h1 style="cursor:default">
+        CSGO Skin Stats
+      </h1>
     </div>
-
-    <form id="input" name="input" method="post" autocomplete="off">
-      <input type="text" id="textbox" name="id" placeholder="Profile URL or Inspect Link" onClick="this.select();" accesskey="n" title="Enter profile URL, inspect link, vanity URL, or SteamID64 to search. Use Alt-N on Windows or Ctrl-Alt-N on Mac to focus on input.">
-      <br>
-      <input style="cursor:pointer" id="button" type="button" value="Check">
+    <form autocomplete="off" id="input" method="post" name="input">
+      <input accesskey="n" id="textbox" name="id" onClick="this.select();" placeholder="Profile URL or Inspect Link" title="Enter profile URL, inspect link, vanity URL, or SteamID64 to search. Use Alt-N on Windows or Ctrl-Alt-N on Mac to focus on input." type="text" /><br /><input id="button" style="cursor:pointer" type="button" value="Check" />
     </form>
-
-    <br>
-
+    <br />
     <div class="loader line-scale-pulse-out" id="loading" style="display: none;">
       <div class="pa">
         <div></div>
@@ -49,12 +40,14 @@
         <div></div>
       </div>
     </div>
-
     <div id="display"></div>
-
     <div id="footer">
-      <div><a href="https://github.com/mattrberry/csgoSkinStatistics">Edit on GitHub</a></div>
-      <div><a href="http://store.steampowered.com/">Powered by Steam</a></div>
+      <div>
+        <a href="https://github.com/mattrberry/csgoSkinStatistics">Edit on GitHub</a>
+      </div>
+      <div>
+        <a href="http://store.steampowered.com/">Powered by Steam</a>
+      </div>
     </div>
   </body>
 </html>
