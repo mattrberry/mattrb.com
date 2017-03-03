@@ -28,13 +28,13 @@ var jumpPower = 10;
 var player = {x:50, y:300, w:25, h:25};
 var walls = [{x:25, y:25, w:50, h:50},
              {x:0, y:0, w:1000, h:25},
-             {x:0, y:0, w:25, h:600},
+             {x:0, y:0, w:25, h:1000},
              //{x:475, y:0, w:25, h:500},
              {x:150, y:125, w:200, h:25},
              {x:25, y:200, w:50, h:25},
              {x:425, y:200, w:50, h:25},
              {x:150, y:275, w:200, h:25}];
-var kill = [{x:225, y:290, w:50, h:10}];
+var kill = [{x:225, y:300, w:50, h:10}];
 
 var lowX = walls.reduce(function (prev, cur) {
     return Math.min(prev, cur.x);
@@ -153,6 +153,10 @@ function moveHorizontal() {
 
 // Move the player up if possible and jumping
 function moveJump() {
+    tempPlayer = modifyObject(player, 0, -1, 0, 0);
+    if (collisionOL(tempPlayer, walls) && up == 1) {
+        yVel = jumpPower;
+    }
     var tempPlayer = modifyObject(player, 0, 1, 0, 0);
     if (collisionOL(tempPlayer, walls)) {
         yVel = 0;
@@ -212,10 +216,7 @@ function keyDown(e) {
     if (e.keyCode == 37) {
         left = 1;
     } else if (e.keyCode == 38) {
-        tempPlayer = modifyObject(player, 0, -1, 0, 0);
-        if (collisionOL(tempPlayer, walls)) {
-            yVel = jumpPower;
-        }
+        up = 1;
     } else if (e.keyCode == 39) {
         right = 1;
     }
@@ -227,7 +228,7 @@ function keyUp(e) {
     if (e.keyCode == 37) {
         left = 0;
     } else if (e.keyCode == 38) {
-        up += 0;
+        up = 0;
     } else if (e.keyCode == 39) {
         right = 0;
     }
