@@ -5,12 +5,12 @@ from flask import Flask, render_template, Markup, request
 import time
 from skinData import fades, order, doppler
 import os
+from csgo_handler import CSGOHandler
 
 apikey = os.environ['steam_api_key']
 
-
 app = Flask(__name__)
-
+cs = CSGOHandler()
 
 @app.route('/displayInventory', methods=["POST"])
 def displayInventory():
@@ -192,5 +192,11 @@ def sortKeys(keys):
     counts = [c for (n, c) in keyList]
     return [k for (c, k) in sorted(zip(counts, keyList))[::-1]]
 
+
 if __name__ == '__main__':
+    cs.login()
+    while not cs.ready:
+        print('sleeping 10')
+        time.sleep(10)
+    print('starting flask')
     app.run()
