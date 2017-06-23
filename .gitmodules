@@ -1,0 +1,3 @@
+[submodule "csgoSkinStatistics"]
+	path = csgoSkinStatistics
+	url = https://github.com/mattrberry/csgoSkinStatistics.git
