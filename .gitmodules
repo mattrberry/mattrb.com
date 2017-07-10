@@ -1,3 +1,6 @@
 [submodule "csgoSkinStatistics"]
 	path = csgoSkinStatistics
 	url = https://github.com/mattrberry/csgoSkinStatistics.git
+[submodule "mattrb.com"]
+	path = mattrb.com
+	url = https://github.com/mattrberry/mattrberry.github.io.git
